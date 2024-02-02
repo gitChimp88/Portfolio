@@ -93,7 +93,6 @@ const Portfolio = () => {
   }, []);
   useEffect(() => {
     if (isotope.current) {
-      console.log('arranging isotope?');
       filterKey === '*'
         ? isotope.current.arrange({ filter: `*` })
         : isotope.current.arrange({ filter: `.${filterKey}` });
@@ -107,7 +106,6 @@ const Portfolio = () => {
     tokyo.dataImage();
   });
 
-  console.log('filter key - ', filterKey);
   const { setPortfolioDetailsModal, modalToggle } = useContext(TokyoContext);
   return (
     <SectionContainer name={'portfolio'}>
