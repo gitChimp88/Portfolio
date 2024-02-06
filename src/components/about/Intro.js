@@ -64,19 +64,6 @@ const Intro = () => {
                   </a>
                 </span>
               </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Phone:
-                </span>
-                <span>
-                  <a
-                    className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="tel:+77 022 177 05 05"
-                  >
-                    +34 602594391
-                  </a>
-                </span>
-              </li>
             </ul>
           </div>
         </div>
@@ -87,7 +74,7 @@ const Intro = () => {
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
                   Nationality:
                 </span>
-                <span>UK</span>
+                <span>British</span>
               </li>
 
               <li className="m-0">

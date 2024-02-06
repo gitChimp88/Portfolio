@@ -1,4 +1,8 @@
+import { TokyoContext } from '@/src/Context';
+import { useContext } from 'react';
+
 const Pricing = () => {
+  const { navChange } = useContext(TokyoContext);
   return (
     <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] pt-[100px] pb-[60px] bg-white">
       <div className="container">
@@ -37,7 +41,7 @@ const Pricing = () => {
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a href="#">
+                  <a onClick={() => navChange('contact')} href="#">
                     <span>Contact</span>
                   </a>
                 </div>
@@ -70,7 +74,7 @@ const Pricing = () => {
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a href="#">
+                  <a onClick={() => navChange('contact')} href="#">
                     <span>Contact</span>
                   </a>
                 </div>
@@ -106,7 +110,7 @@ const Pricing = () => {
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a href="#">
+                  <a onClick={() => navChange('contact')} href="#">
                     <span>Contact</span>
                   </a>
                 </div>

@@ -7,7 +7,7 @@ const programming = [
   { id: 4, name: 'HTML + CSS', value: 80 },
 ];
 const language = [
-  { id: 1, name: 'English', value: 90 },
+  { id: 1, name: 'English', value: 100 },
   { id: 2, name: 'Spanish', value: 35 },
 ];
 const Skills = () => {
