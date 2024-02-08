@@ -1,19 +1,33 @@
-import { TokyoContext } from "@/src/Context";
-import { useContext } from "react";
-import ModalContainer from "./ModalContainer";
+import { TokyoContext } from '@/src/Context';
+import { useContext } from 'react';
+import ModalContainer from './ModalContainer';
 const DetailsModal = () => {
   const { portfolioDetailsModal, setPortfolioDetailsModal } =
     useContext(TokyoContext);
+
+  const mainClass =
+    portfolioDetailsModal.title === 'Pizza wallet' ? 'main' : 'main2';
+
+  const bigImageClass =
+    portfolioDetailsModal.title === 'Pizza wallet'
+      ? 'main absolute inset-0 bg-no-repeat bg-center bg-contain'
+      : 'main absolute inset-0 bg-no-repeat bg-center bg-cover';
+
+  const exampleImages =
+    portfolioDetailsModal.title === 'Pizza wallet'
+      ? { height: '670px', width: '350px' }
+      : { height: '500px', width: '300px' };
   return (
     <ModalContainer nullValue={setPortfolioDetailsModal}>
       <div className="popup_details">
         <div className="top_image">
           <img src="assets/img/thumbs/4-2.jpg" alt="image" />
           <div
-            className="main"
+            className={mainClass}
             data-img-url={portfolioDetailsModal.thumbnail}
             style={{
               backgroundImage: `url(${portfolioDetailsModal.thumbnail})`,
+              width: '100%',
             }}
           />
         </div>
@@ -27,7 +41,7 @@ const DetailsModal = () => {
             {portfolioDetailsModal.text.map((text, i) => (
               <p
                 className={
-                  portfolioDetailsModal.text.length - 1 == i ? "" : "mb-[20px]"
+                  portfolioDetailsModal.text.length - 1 == i ? '' : 'mb-[20px]'
                 }
                 key={i}
               >
@@ -90,8 +104,9 @@ const DetailsModal = () => {
                     alt="image"
                   />
                   <div
-                    className="main absolute inset-0 bg-no-repeat bg-center bg-cover"
-                    data-img-url="assets/img/portfolio/1.jpg"
+                    className={bigImageClass}
+                    // data-img-url="assets/img/portfolio/1.jpg"
+                    data-img-url={portfolioDetailsModal.bigImage}
                     style={{
                       backgroundImage: `url(${portfolioDetailsModal.bigImage})`,
                     }}
@@ -101,8 +116,8 @@ const DetailsModal = () => {
             </li>
             {portfolioDetailsModal.images.map((img, i) => (
               <li key={i} className="mb-[30px] float-left w-1/2 pl-[30px]">
-                <div className="list_inner w-full h-auto clear-both float-left relative">
-                  <div className="my_image relative">
+                <div className="list_inner w-full clear-both float-left relative">
+                  <div style={exampleImages} className="my_image relative">
                     <img
                       className="opacity-0 min-w-full"
                       src="assets/img/thumbs/4-2.jpg"
@@ -110,7 +125,8 @@ const DetailsModal = () => {
                     />
                     <div
                       className="main absolute inset-0 bg-no-repeat bg-center bg-cover"
-                      data-img-url="assets/img/portfolio/2.jpg"
+                      // data-img-url="assets/img/portfolio/2.jpg"
+                      data-img-url={img}
                       style={{
                         backgroundImage: `url(${img})`,
                       }}

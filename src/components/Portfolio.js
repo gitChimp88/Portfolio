@@ -7,13 +7,64 @@ import SectionTitle from './SectionTitle';
 const detailData = [
   {
     id: 1,
-    thumbnail: 'assets/img/portfolio/7.jpg',
-    title: 'Project 1',
+    thumbnail: 'assets/img/portfolio/recipeWrangleLogo.png',
+    title: 'RecipeWrangle',
+    text: [
+      'Project Overview',
+      'RecipeWrangle is a groundbreaking mobile application that revolutionizes the vegan cooking experience, placing the power of artificial intelligence in the hands of users. This app seamlessly integrates React Native for the frontend, while leveraging AWS services such as Cognito, Lambda, and RDS for a robust and scalable backend infrastructure.',
+      'Key features:',
+      'AI-Generated Recipes: Empowering users to receive personalized vegan recipes. The app covers a wide spectrum of meals, allowing users to explore diverse plant-based dishes tailored to their specific taste preferences.',
+      "Ingredient Customization: RecipeWrangle simplifies the cooking process by enabling users to input available ingredients, allowing the AI engine to craft delightful vegan dishes based on what's already in their pantry. This unique feature adds a layer of personalization, making vegan cooking more accessible and convenient.",
+      "Promoting Sustainability: A core value of RecipeWrangle is its commitment to sustainability. By suggesting recipes that align with users' available ingredients, the app actively promotes mindful cooking, reducing food waste and unnecessary purchases. This not only enhances the user experience but also contributes to positive environmental impact.",
+      "Save and Organize: To enhance user convenience, RecipeWrangle offers a 'Save' feature, allowing users to store their favorite recipes for future use. This personalized recipe collection facilitates easy retrieval and recreation of beloved dishes, fostering a user-friendly and organized culinary experience.",
+      'Share the Joy of Cooking: RecipeWrangle encourages the community aspect of plant-based living by making it effortless for users to share their favorite recipes with friends and family. The app facilitates seamless recipe sharing options, fostering a sense of community and inspiring others with delightful culinary creations.',
+      'Technologies used: ',
+      'Frontend: React Native',
+      'Backend Services: AWS (Cognito, Lambda, RDS)',
+      'Solution:',
+      'RecipeWrangle is a comprehensive solution that leverages React Native for a user-friendly interface and integrates seamlessly with AWS services for a secure and scalable backend. The AI engine ensures a personalized experience, while features like ingredient customization, sustainability promotion, and social sharing make it an all-encompassing tool for both seasoned plant-based chefs and those new to the vegan journey.',
+    ],
+    client: 'RecipeWrangle',
+    date: 'March 01, 2024',
+    category: 'Mobile',
+    share: [
+      {
+        id: 1,
+        iconName: 'icon-facebook-squared',
+        link: 'https://www.facebook.com/',
+      },
+      {
+        id: 2,
+        iconName: 'icon-twitter-squared',
+        link: 'https://twitter.com/',
+      },
+      {
+        id: 3,
+        iconName: 'icon-behance-squared',
+        link: 'https://www.behance.net/',
+      },
+      {
+        id: 4,
+        iconName: 'icon-linkedin-squared',
+        link: 'https://www.linkedin.com/',
+      },
+    ],
+    bigImage: 'assets/img/portfolio/recipeGraphic.png',
+    images: [
+      'assets/img/portfolio/02.png',
+      'assets/img/portfolio/03.png',
+      'assets/img/portfolio/04.png',
+    ],
+  },
+  {
+    id: 2,
+    thumbnail: 'assets/img/portfolio/pizza.svg',
+    title: 'Pizza wallet',
     text: [
       'We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.',
       "Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they will represent the target product. Making mockups a part of your creative and development process allows you to quickly and easily ideate.",
     ],
-    client: 'RecipeWrangle',
+    client: 'Pizza wallet',
     date: 'October 22, 2022',
     category: 'Detail',
     share: [
@@ -38,12 +89,16 @@ const detailData = [
         link: 'https://www.linkedin.com/',
       },
     ],
-    bigImage: 'assets/img/portfolio/1.jpg',
-    images: ['assets/img/portfolio/2.jpg', 'assets/img/portfolio/3.jpg'],
+    bigImage: 'assets/img/portfolio/mainPizzaLogo.svg',
+    images: [
+      'assets/img/portfolio/pizza1.png',
+      'assets/img/portfolio/pizza2.png',
+      'assets/img/portfolio/pizza3.png',
+    ],
   },
   {
     id: 2,
-    thumbnail: 'assets/img/portfolio/8.jpg',
+    thumbnail: 'assets/img/portfolio/pizzaWallet.jpg',
     title: 'Project 2',
     text: [
       'We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.',
@@ -175,24 +230,24 @@ const Portfolio = () => {
                       />
                       <div
                         className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="assets/img/portfolio/7.jpg"
+                        data-img-url="assets/img/portfolio/recipeWrangleLogo.png"
                       />
                     </a>
                   </div>
                 </div>
               </li>
-              <li className="detail Web mb-[40px] float-left w-1/3 pl-[40px] item__">
+              <li className="detail Mobile mb-[40px] float-left w-1/3 pl-[40px] item__">
                 <div className="inner w-full h-auto clear-both float-left overflow-hidden relative">
                   <div
                     className="entry tokyo_tm_portfolio_animation_wrap"
-                    data-title="Web project"
-                    data-category="Web"
+                    data-title="Mobile project"
+                    data-category="Mobile"
                   >
                     <a
                       className="popup_info"
                       href="#"
                       onClick={() => {
-                        setPortfolioDetailsModal(detailData[0]);
+                        setPortfolioDetailsModal(detailData[1]);
                         modalToggle(true);
                       }}
                     >
@@ -202,8 +257,8 @@ const Portfolio = () => {
                         alt="image"
                       />
                       <div
-                        className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="assets/img/portfolio/7.jpg"
+                        className="abs_image absolute inset-0 bg-no-repeat bg-contain bg-center transition-all duration-300"
+                        data-img-url="assets/img/portfolio/pizza.svg"
                       />
                     </a>
                   </div>
@@ -220,7 +275,7 @@ const Portfolio = () => {
                       className="popup_info"
                       href="#"
                       onClick={() => {
-                        setPortfolioDetailsModal(detailData[1]);
+                        setPortfolioDetailsModal(detailData[2]);
                         modalToggle(true);
                       }}
                     >

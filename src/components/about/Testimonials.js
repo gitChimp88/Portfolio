@@ -3,18 +3,18 @@ import { sliderProps } from '../../sliderProps';
 const testimonialData = [
   {
     id: 1,
-    text: 'Something nice here, blah blah blahj blah blah blah blach, eriovhjerivrkejvrjesjkjinrkfnejknjernjnnjnj',
-    authorImage: 'assets/img/testimonials/1.jpg',
+    text: 'I had the pleasure of working closely with Michael, a skilled developer who brought creativity and expertise to the table while developing outstanding web and mobile app MVPs during our collaboration. His innovative approach and commitment to perfection were evident as he brought my vision to life. I wholeheartedly recommend him for his technical prowess and dedication to delivering exceptional results.',
+    authorImage: 'assets/img/testimonials/stefano.jpeg',
     authorName: 'Stefano Calandriello',
-    authorDesignation: 'CEO',
+    authorDesignation: 'Founder - Pizza wallet',
   },
-  {
-    id: 2,
-    text: 'Something nice here, blah blah blahj blah blah blah blach, eriovhjerivrkejvrjesjkjinrkfnejknjernjnnjnj',
-    authorImage: 'assets/img/testimonials/2.jpg',
-    authorName: 'Nuno',
-    authorDesignation: 'Software architect',
-  },
+  // {
+  //   id: 2,
+  //   text: 'Something nice here, blah blah blahj blah blah blah blach, eriovhjerivrkejvrjesjkjinrkfnejknjernjnnjnj',
+  //   authorImage: 'assets/img/testimonials/2.jpg',
+  //   authorName: 'Nuno',
+  //   authorDesignation: 'Software architect',
+  // },
   // {
   //   id: 3,
   //   text: "These people really know what they are doing! Great customer support availability and supperb kindness.",
