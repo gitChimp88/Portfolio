@@ -1,4 +1,5 @@
 import SectionContainer from './SectionContainer';
+import Testimonials from './about/Testimonials';
 const socialIcon = [
   {
     id: 1,
@@ -56,6 +57,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Testimonials />
     </SectionContainer>
   );
 };

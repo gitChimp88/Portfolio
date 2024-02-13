@@ -15,7 +15,7 @@ const DetailsModal = () => {
 
   const exampleImages =
     portfolioDetailsModal.title === 'Pizza wallet'
-      ? { height: '670px', width: '350px' }
+      ? { height: '700px', width: '100%' }
       : { height: '500px', width: '300px' };
   return (
     <ModalContainer nullValue={setPortfolioDetailsModal}>
