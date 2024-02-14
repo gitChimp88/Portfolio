@@ -17,7 +17,10 @@ const Pricing = () => {
                   <h3 className="text-[40px] font-semibold">
                     <span>
                       €100
-                      <span> /m</span>
+                      <span style={{ fontSize: '18px', marginLeft: '5px' }}>
+                        {' '}
+                        /mo
+                      </span>
                     </span>
                   </h3>
                 </div>
@@ -31,13 +34,13 @@ const Pricing = () => {
                     <p>5 pages</p>
                   </li>
                   <li className="opacity-50">
-                    <p>Quality Logo</p>
+                    <p>Unlimited edits</p>
                   </li>
                   <li className="opacity-50">
-                    <p>Stock Images</p>
+                    <p>Includes hosting</p>
                   </li>
                   <li className="opacity-50">
-                    <p>Free Support</p>
+                    <p>Lifetime updates</p>
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">

@@ -73,8 +73,8 @@ const detailData = [
       'Backend Services: AWS (DynamoDB, Lambda)',
     ],
     client: 'Pizza wallet',
-    date: 'October 22, 2022',
-    category: 'Detail',
+    date: 'September 22, 2023',
+    category: 'Mobile',
     share: [
       {
         id: 1,

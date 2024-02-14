@@ -13,10 +13,8 @@ const DetailsModal = () => {
       ? 'main absolute inset-0 bg-no-repeat bg-center bg-contain'
       : 'main absolute inset-0 bg-no-repeat bg-center bg-cover';
 
-  const exampleImages =
-    portfolioDetailsModal.title === 'Pizza wallet'
-      ? { height: '700px', width: '100%' }
-      : { height: '500px', width: '300px' };
+  const exampleImages = { height: '500px', width: '300px' };
+
   return (
     <ModalContainer nullValue={setPortfolioDetailsModal}>
       <div className="popup_details">

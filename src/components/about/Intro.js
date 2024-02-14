@@ -33,7 +33,7 @@ const Intro = () => {
         <div className="left w-1/2 pr-[50px]">
           <div className="tokyo_tm_info w-full h-auto clear-both float-left">
             <ul className="m-0 list-none">
-              <li className="m-0">
+              {/* <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
                   Birthday:
                 </span>
@@ -44,7 +44,7 @@ const Intro = () => {
                   Age:
                 </span>
                 <span>35</span>
-              </li>
+              </li> */}
               <li className="m-0">
                 <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
                   Address:
