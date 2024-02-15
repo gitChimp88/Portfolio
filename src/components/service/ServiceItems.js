@@ -11,7 +11,7 @@ const services = [
       'Enhanced User Interaction: Provide a dynamic and interactive user experience on the web.',
       'Scalability and Adaptability: Scale your web app to accommodate growing user needs and technological advancements.',
     ],
-    image: 'assets/img/news/1.jpg',
+    image: 'assets/img/news/webdev.png',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const services = [
       'Stand out in a crowded digital landscape by establishing a strong presence on mobile devices. A well-designed app not only reinforces brand identity but also makes your services accessible at the fingertips of your audience.',
       'Mobile apps can leverage device features such as cameras, GPS, and notifications, enhancing functionality and user experience. This opens up exciting possibilities for interactive and dynamic applications.',
     ],
-    image: 'assets/img/news/2.jpg',
+    image: 'assets/img/news/mobileDev.png',
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const services = [
       'With an increasing number of users shopping on mobile devices, having a mobile-optimized store is crucial. Shopify ensures a seamless and responsive shopping experience for customers on various devices.',
       'Trust is paramount in e-commerce. Shopify provides robust security features to safeguard customer data and ensure secure transactions, instilling confidence in your online shoppers.',
     ],
-    image: 'assets/img/news/2.jpg',
+    image: 'assets/img/news/eCommerceDev.png',
   },
 ];
 const ServiceItems = () => {

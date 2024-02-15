@@ -1,6 +1,6 @@
-import { TokyoContext } from "@/src/Context";
-import { useContext } from "react";
-import ModalContainer from "./ModalContainer";
+import { TokyoContext } from '@/src/Context';
+import { useContext } from 'react';
+import ModalContainer from './ModalContainer';
 const ServiceModal = () => {
   const { serviceModal, setServiceModal } = useContext(TokyoContext);
   return (
@@ -20,7 +20,7 @@ const ServiceModal = () => {
         <div className="descriptions w-full float-left">
           {serviceModal.text.map((text, i) => (
             <p
-              className={serviceModal.text.length - 1 == i ? "" : "mb-[15px]"}
+              className={serviceModal.text.length - 1 == i ? '' : 'mb-[15px]'}
               key={i}
             >
               {text}

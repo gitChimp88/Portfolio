@@ -64,13 +64,13 @@ const Pricing = () => {
                 </div>
                 <ul className="item list-none">
                   <li className="active">
-                    <p>Premium Icons</p>
+                    <p>Customized design</p>
                   </li>
                   <li className="active">
                     <p>Quality Logo</p>
                   </li>
                   <li className="opacity-50">
-                    <p>Stock Images</p>
+                    <p>Performance optimization</p>
                   </li>
                   <li className="opacity-50">
                     <p>Free Support</p>
@@ -100,15 +100,15 @@ const Pricing = () => {
                 </div>
                 <ul className="item list-none">
                   <li className="active">
-                    <p>Premium Icons</p>
+                    <p>Customized design</p>
                   </li>
                   <li className="active">
                     <p>Quality Logo</p>
                   </li>
-                  <li className="active">
-                    <p>Stock Images</p>
+                  <li className="opacity-50">
+                    <p>Performance optimization</p>
                   </li>
-                  <li className="active">
+                  <li className="opacity-50">
                     <p>Free Support</p>
                   </li>
                 </ul>
