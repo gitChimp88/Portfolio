@@ -25,8 +25,12 @@ const detailData = [
       'RecipeWrangle is a comprehensive solution that leverages React Native for a user-friendly interface and integrates seamlessly with AWS services for a secure and scalable backend. The AI engine ensures a personalized experience, while features like ingredient customization, sustainability promotion, and social sharing make it an all-encompassing tool for both seasoned plant-based chefs and those new to the vegan journey.',
     ],
     client: 'RecipeWrangle',
-    date: 'March 01, 2024',
+    date: 'March, 2024',
     category: 'Mobile',
+    link: {
+      name: 'RecipeWrangle',
+      url: 'https://play.google.com/store/apps/details?id=com.mike88.recipeFrontend&hl=en&gl=US',
+    },
     share: [
       {
         id: 1,
@@ -73,8 +77,12 @@ const detailData = [
       'Backend Services: AWS (DynamoDB, Lambda)',
     ],
     client: 'Pizza wallet',
-    date: 'September 22, 2023',
+    date: 'September, 2023',
     category: 'Mobile',
+    link: {
+      name: 'Pizza wallet',
+      url: 'https://www.pizzawallet.io',
+    },
     share: [
       {
         id: 1,
@@ -105,39 +113,43 @@ const detailData = [
   },
   {
     id: 2,
-    thumbnail: 'assets/img/portfolio/pizzaWallet.jpg',
-    title: 'Project 2',
+    thumbnail: 'assets/img/portfolio/marketingScreenshot.png',
+    title: 'RecipeWrangle Marketing page',
     text: [
-      'We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.',
-      "Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they will represent the target product. Making mockups a part of your creative and development process allows you to quickly and easily ideate.",
+      'Leveraging the power of React.js, I implemented a modular and component-based structure, ensuring scalability and maintainability of the codebase. The use of React allowed for seamless integration of interactive elements and real-time updates, enhancing user engagement. The responsive design ensures that the marketing page looks appealing and functions flawlessly across various devices, catering to the diverse preferences of potential users.',
+      "Through meticulous attention to detail, I crafted a visually appealing interface that aligns with the mobile app's branding. Smooth animations and transitions were incorporated to create a fluid and enjoyable browsing experience. Additionally, I integrated user-friendly navigation to guide visitors through the app's key features, fostering a deeper understanding of its value proposition.",
     ],
-    client: 'Pizza wallet',
-    date: 'October 22, 2022',
-    category: 'Detail',
+    client: 'RecipeWrangle',
+    date: 'March, 2024',
+    category: 'Web',
+    link: {
+      name: 'Marketing page',
+      url: 'https://www.recipewrangle.com/',
+    },
     share: [
-      {
-        id: 1,
-        iconName: 'icon-facebook-squared',
-        link: 'https://www.facebook.com/',
-      },
-      {
-        id: 2,
-        iconName: 'icon-twitter-squared',
-        link: 'https://twitter.com/',
-      },
-      {
-        id: 3,
-        iconName: 'icon-behance-squared',
-        link: 'https://www.behance.net/',
-      },
-      {
-        id: 4,
-        iconName: 'icon-linkedin-squared',
-        link: 'https://www.linkedin.com/',
-      },
+      // {
+      //   id: 1,
+      //   iconName: 'icon-facebook-squared',
+      //   link: 'https://www.facebook.com/',
+      // },
+      // {
+      //   id: 2,
+      //   iconName: 'icon-twitter-squared',
+      //   link: 'https://twitter.com/',
+      // },
+      // {
+      //   id: 3,
+      //   iconName: 'icon-behance-squared',
+      //   link: 'https://www.behance.net/',
+      // },
+      // {
+      //   id: 4,
+      //   iconName: 'icon-linkedin-squared',
+      //   link: 'https://www.linkedin.com/',
+      // },
     ],
-    bigImage: 'assets/img/portfolio/1.jpg',
-    images: ['assets/img/portfolio/2.jpg', 'assets/img/portfolio/3.jpg'],
+    bigImage: '',
+    images: [],
   },
 ];
 const Portfolio = () => {
@@ -293,7 +305,7 @@ const Portfolio = () => {
                       />
                       <div
                         className="abs_image absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                        data-img-url="assets/img/portfolio/8.jpg"
+                        data-img-url="assets/img/portfolio/webProject.png"
                       />
                     </a>
                   </div>

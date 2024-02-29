@@ -93,11 +93,11 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="tokyo_tm_button" data-position="left">
+      {/* <div className="tokyo_tm_button" data-position="left">
         <a href="assets/img/cv/MichaelSullivanFS.pdf" download>
           <span>Download CV</span>
         </a>
-      </div>
+      </div> */}
     </Fragment>
   );
 };
