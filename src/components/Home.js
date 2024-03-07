@@ -82,7 +82,7 @@ const Home = ({
                 </h3>
                 <p className="job font-montserrat font-medium w-full mb-[25px]">
                   Elevating Ideas into Seamless Solutions: Innovative
-                  Development, Business-Focused Results..
+                  Development, Business-Focused Results.
                 </p>
                 <div className="social w-full float-left">
                   <ul className="m-0 list-none">
