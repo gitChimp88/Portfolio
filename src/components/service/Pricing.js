@@ -1,13 +1,15 @@
 import { TokyoContext } from '@/src/Context';
 import { useContext } from 'react';
+import SectionTitle from '../SectionTitle';
 
-const Pricing = () => {
+const Pricing = ({ scrollToContact }) => {
   const { navChange } = useContext(TokyoContext);
   return (
     <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] pt-[100px] pb-[60px] bg-white">
       <div className="container">
         <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-          <h3 className="text-[20px] font-bold">Pricing</h3>
+          {/* <h3 className="text-[20px] font-bold">Pricing</h3> */}
+          <SectionTitle pageName={''} title={'Pricing'} />
         </div>
         <div className="list w-full h-auto clear-both float-left">
           <ul className="ml-[-40px]">
@@ -44,7 +46,7 @@ const Pricing = () => {
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a onClick={() => navChange('contact')} href="#">
+                  <a onClick={scrollToContact} href="#">
                     <span>Contact</span>
                   </a>
                 </div>
@@ -77,7 +79,7 @@ const Pricing = () => {
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a onClick={() => navChange('contact')} href="#">
+                  <a onClick={scrollToContact} href="#">
                     <span>Contact</span>
                   </a>
                 </div>
@@ -113,7 +115,7 @@ const Pricing = () => {
                   </li>
                 </ul>
                 <div className="tokyo_tm_button" data-position="left">
-                  <a onClick={() => navChange('contact')} href="#">
+                  <a onClick={scrollToContact} href="#">
                     <span>Contact</span>
                   </a>
                 </div>

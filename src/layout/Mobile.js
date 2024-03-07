@@ -1,7 +1,7 @@
 import { Fragment, useContext, useState } from 'react';
 import { TokyoContext } from '../Context';
 
-const Mobile = () => {
+const Mobile = ({ scrollIntoView }) => {
   const [toggle, setToggle] = useState(false);
   const { navChange, nav, menus } = useContext(TokyoContext);
   return (
@@ -53,7 +53,10 @@ const Mobile = () => {
                   className="text-black font-montserrat"
                   href={`#${menu.href}`}
                   onClick={() => {
-                    navChange(menu.href);
+                    // navChange(menu.href);
+
+                    scrollIntoView(menu.href);
+
                     setToggle(!toggle);
                   }}
                 >
