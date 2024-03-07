@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { sliderProps } from '../../sliderProps';
+import SectionTitle from '../SectionTitle';
+
 const testimonialData = [
   {
     id: 1,
@@ -28,7 +30,11 @@ const Testimonials = () => {
     <div className="tokyo_tm_testimonials w-full h-auto clear-both float-left py-[100px] px-0">
       <div className="container">
         <div className="tokyo_section_title w-full h-auto clear-both float-left mb-[40px]">
-          <h3 className="text-[20px] font-bold">Testimonials</h3>
+          <h3 className="text-[20px] font-bold">Happy Customers</h3>
+          <SectionTitle
+            pageName={'Testimonials'}
+            title={`What they're saying`}
+          />
         </div>
         <div className="list w-full h-auto clear-both float-left overflow-hidden">
           <Swiper

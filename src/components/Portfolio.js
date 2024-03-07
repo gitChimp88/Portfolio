@@ -188,7 +188,7 @@ const Portfolio = () => {
       <div className="tokyo_tm_portfolio w-full h-auto clear-both float-left px-0 pt-[100px] pb-[40px]">
         <div className="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
           <div className="title_flex w-full h-auto clear-both flex justify-between items-end">
-            <SectionTitle pageName={'Portfolio'} title={'Past projects'} />
+            <SectionTitle pageName={'Portfolio'} title={'Client projects'} />
             {/* <div className="portfolio_filter">
               <ul className="list-none">
                 <li className="mr-[25px] inline-block">
