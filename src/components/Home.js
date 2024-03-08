@@ -6,6 +6,7 @@ import Pricing from './service/Pricing';
 import ServiceItems from './service/ServiceItems';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import BenefitItems from './benefits/BenefitItems';
 
 const socialIcon = [
   {
@@ -51,12 +52,6 @@ const Home = ({
   const scrollToContact = () => {
     if (contactSectionRef.current) {
       contactSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-      // setTimeout(function () {
-      //   contactSectionRef.current?.scrollIntoView({
-      //     behavior: 'smooth',
-      //     block: 'start',
-      //   });
-      // }, 1000);
     }
   };
   return (
@@ -78,11 +73,11 @@ const Home = ({
               </div>
               <div className="details ml-[80px]">
                 <h3 className="name text-[55px] font-extrabold uppercase mb-[14px]">
-                  Professional <span>Web design</span>
+                  Precision <span>Web Solutions</span>
                 </h3>
                 <p className="job font-montserrat font-medium w-full mb-[25px]">
-                  Elevating Ideas into Seamless Solutions: Innovative
-                  Development, Business-Focused Results.
+                  Transforming your Ideas into reality through effective app
+                  development
                 </p>
                 <div className="social w-full float-left">
                   <ul className="m-0 list-none">
@@ -99,39 +94,69 @@ const Home = ({
                     ))}
                   </ul>
                 </div>
+                <div
+                  style={{ marginTop: '15px' }}
+                  className="tokyo_tm_button mt-10"
+                  data-position="left"
+                >
+                  <a onClick={scrollToContact} href="#">
+                    <span>Get Started</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* SERVICES */}
-        <div ref={servicesSectionRef} className="container">
-          <div className="tokyo_tm_services w-full h-auto clear-both float-left py-[100px] px-0">
-            <div className="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
-              <div className="title_flex w-full h-auto clear-both flex justify-between items-end">
-                <SectionTitle
-                  pageName={'Services'}
-                  title={'What can I do for you?'}
-                />
+        {/* Benefits */}
+        <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] pt-[100px] pb-[60px] bg-white">
+          <div ref={servicesSectionRef} className="container">
+            <div className="tokyo_tm_services w-full h-auto clear-both float-left py-[100px] px-0">
+              <div className="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
+                <div className="title_flex w-full h-auto clear-both flex justify-between items-end">
+                  <SectionTitle
+                    pageName={'Benefits'}
+                    title={'Why choose me?'}
+                  />
+                </div>
               </div>
+              <BenefitItems />
+              {/* <ServiceItems /> */}
             </div>
-            <ServiceItems />
           </div>
-        </div>
-
-        {/* PRICING */}
-
-        <Pricing scrollToContact={scrollToContact} />
-
-        {/* PORTFOLIO */}
-        <div ref={portfolioSectionRef} className="container">
-          <Portfolio />
         </div>
 
         {/* Testimonials */}
         <div>
           <Testimonials />
         </div>
+
+        {/* SERVICES */}
+
+        <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] pt-[100px] pb-[60px] bg-white">
+          <div ref={servicesSectionRef} className="container">
+            <div className="tokyo_tm_services w-full h-auto clear-both float-left py-[100px] px-0">
+              <div className="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
+                <div className="title_flex w-full h-auto clear-both flex justify-between items-end">
+                  <SectionTitle
+                    pageName={'Services'}
+                    title={'What can I do for you?'}
+                  />
+                </div>
+              </div>
+              <ServiceItems />
+            </div>
+          </div>
+        </div>
+
+        {/* PORTFOLIO */}
+        <div ref={portfolioSectionRef} className="container">
+          <Portfolio />
+        </div>
+
+        {/* PRICING */}
+
+        <Pricing scrollToContact={scrollToContact} />
 
         {/* CONTACT */}
 

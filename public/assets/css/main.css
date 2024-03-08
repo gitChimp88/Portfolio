@@ -652,6 +652,13 @@ h6 {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+  border: 1px solid black;
+}
+
+.tokyo_tm_button a:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
 
 .tokyo_progress {
@@ -1331,6 +1338,8 @@ h6 {
     padding-right: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
+    background: white;
+    width: 100%;
   }
 
   .tokyo_tm_services .list ul li {
