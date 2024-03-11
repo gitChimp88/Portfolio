@@ -1,4 +1,3 @@
-// import Isotope from 'isotope-layout';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { TokyoContext } from '../Context';
 import { tokyo } from '../utils';

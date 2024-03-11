@@ -7,6 +7,7 @@ import ServiceItems from './service/ServiceItems';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import BenefitItems from './benefits/BenefitItems';
+import Image from 'next/image';
 
 const socialIcon = [
   {
@@ -66,9 +67,12 @@ const Home = ({
               >
                 {' '}
                 {/* data-type values are: "wave", "circle", "square"*/}
-                <div
+                <Image
+                  src="/assets/img/slider/1.jpg"
+                  alt="Description of your image"
+                  layout="fill"
+                  objectFit="cover"
                   className="image absolute inset-0 bg-no-repeat bg-center bg-cover"
-                  data-img-url="assets/img/slider/1.jpg"
                 />
               </div>
               <div className="details ml-[80px]">
@@ -109,7 +113,7 @@ const Home = ({
         </div>
 
         {/* Benefits */}
-        <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] pt-[100px] pb-[60px] bg-white">
+        <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] bg-white">
           <div ref={servicesSectionRef} className="container">
             <div className="tokyo_tm_services w-full h-auto clear-both float-left py-[100px] px-0">
               <div className="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
@@ -121,7 +125,6 @@ const Home = ({
                 </div>
               </div>
               <BenefitItems />
-              {/* <ServiceItems /> */}
             </div>
           </div>
         </div>
@@ -133,7 +136,7 @@ const Home = ({
 
         {/* SERVICES */}
 
-        <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] pt-[100px] pb-[60px] bg-white">
+        <div className="tokyo_tm_pricing w-full h-auto clear-both float-left px-[0px] bg-white">
           <div ref={servicesSectionRef} className="container">
             <div className="tokyo_tm_services w-full h-auto clear-both float-left py-[100px] px-0">
               <div className="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
